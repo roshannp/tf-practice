@@ -22,7 +22,7 @@ provider "aws" {
   region = "us-east-2"
 }
 
-resource "aws_instance" "test_server" {
+resource "aws_instance" "newlynewly" {
   ami           = "ami-088b41ffb0933423f"
   instance_type = "t2.micro"
 
