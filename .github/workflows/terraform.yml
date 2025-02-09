@@ -38,6 +38,7 @@ jobs:
       - name: Terraform Plan
         run: terraform plan -out=tfplan
 
-      - name: Terraform Apply (Only on Main Branch)
-        if: github.ref == 'refs/heads/main'
-        run: terraform apply -auto-approve tfplan
+#      - name: Terraform Apply (Only on Main Branch)
+      #  if: github.ref == 'refs/heads/main'
+      #  run: terraform apply -auto-approve tfplan '''
+#
