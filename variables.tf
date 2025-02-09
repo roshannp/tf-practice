@@ -3,3 +3,14 @@ variable "instance_name" {
   type        = string
   default     = "ExampleAppServerInstance"
 }
+
+
+variable "instance_id" {
+  description = "Instance ID"
+  type        = string
+}
+
+variable "instance_public_ip" {
+  description = "public IP"
+  type        = string
+}
