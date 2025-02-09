@@ -1,11 +1,11 @@
 terraform {
 
-   backend "s3" {
-    bucket = "my-terraform-state-bucket-roe"
-    key    = "terraform.tfstate"
-    region = "us-east-2"
-    dynamodb_table= "terraform-locks"
-  encrypt = true
+  backend "s3" {
+    bucket         = "my-terraform-state-bucket-roe"
+    key            = "terraform.tfstate"
+    region         = "us-east-2"
+    dynamodb_table = "terraform-locks"
+    encrypt        = true
   }
 
   required_providers {
@@ -31,4 +31,4 @@ resource "aws_instance" "test_server" {
   }
 }
 
- 
+
